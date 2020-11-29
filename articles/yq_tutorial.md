@@ -20,7 +20,7 @@ Mac
 ```
 brew install yq
 ```
-で OK
+で OK。
 
 ちなみに Docker image も配布している。
 CI で使うことを考えると便利そうですね。
@@ -61,7 +61,7 @@ yq write -i postgres-pod.yaml spec.containers[0].image postgres:11
 ## 補足
 ### Path Expressions
 yq 使う上で理解しておかなくてはいけないのが Path Expressions。
-yaml の要素を指定する際に使う，表現方法である。
+yaml の要素を指定する際に使う，表現方法です。
 例えば `postgres-pod.yaml` の `image: postgres` を指定したい場合の Path Expression は
 `spec.containers[0].image`
 となる。詳しくは以下ドキュメントを参照。
@@ -73,8 +73,8 @@ yq write <yaml_file> <path_expression> <new value>
 ```
 で使える。
 よく使いそうなオプションは以下の通り。
-`-i, --inplace `: yaml ファイルを直接更新する，付けない場合，標準出力に更新後の yaml の内容が出されるだけでファイル自体は更新しない
-` -v, --verbose`: 詳細を出力する，CI で実行させるときはつけるといいかも
+`-i, --inplace `: yaml ファイルを直接更新する，付けない場合，標準出力に更新後の yaml の内容が出されるだけでファイル自体は更新しません。
+` -v, --verbose`: 詳細を出力する，CI で実行させるときはつけると便利ですね。
 
 # まとめ
 yq を使えば CI でマニフェストファイルの更新が簡単にできそう。
