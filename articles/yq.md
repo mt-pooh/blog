@@ -10,7 +10,7 @@
 https://github.com/mikefarah/yq
 Doc: https://mikefarah.gitbook.io/yq/
 
-要するにコマンドラインでyamlファイルをいい感じに操作できるツールとのこと．
+要するにコマンドラインで yaml ファイルをいい感じに操作できるツールとのこと。
 ちなみに，jsonをコマンドラインでいい感じに操作できるツール[jq](https://github.com/stedolan/jq)もあるらしい．
 
 ## install
