@@ -3,7 +3,7 @@ on: [pull_request]
 jobs:
   textlint:
     name: runner / textlint
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -16,3 +16,13 @@ jobs:
           reporter: github-pr-review
           level: warning
           textlint_flags: "articles/**"
+  slack-notify:
+    if: always()
+    needs: textlint
+    name: workflow notification to slack
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: Gamesight/slack-workflow-status@master
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
