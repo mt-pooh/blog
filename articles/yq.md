@@ -60,7 +60,7 @@ yq write -i postgres-pod.yaml spec.containers[0].image postgres:11
 
 ## 補足
 ### Path Expressions
-yq使う上で理解しておかなくてはいけないのがPath Expressions．
+yq 使う上で理解しておかなくてはいけないのが Path Expressions。
 yamlの要素を指定する際に使う，表現方法である．
 例えば`postgres-pod.yaml`の`image: postgres`を指定したい場合のPath Expressionは
 `spec.containers[0].image`
