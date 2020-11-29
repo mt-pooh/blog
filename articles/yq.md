@@ -28,7 +28,7 @@ CIで使うことを考えると便利そうですね．
 docker run --rm -v "${PWD}":/workdi mikefarah/yq yq [flags] <command> FILE...
 ```
 # yq使ってみる
-今回の目的は`postgres-pod.yaml`のimageの値，`postgres`を`postgres:11`に書き換えることとする．
+今回の目的は `postgres-pod.yaml` の image の値， `postgres` を `postgres:11` に書き換えることとする．
 
 ```
 # postgres-pod.yaml
