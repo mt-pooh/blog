@@ -22,7 +22,7 @@ brew install yq
 ```
 でOK
 
-ちなみにDocker imageも配布している．
+ちなみに Docker image も配布している。
 CIで使うことを考えると便利そうですね．
 ```
 docker run --rm -v "${PWD}":/workdi mikefarah/yq yq [flags] <command> FILE...
