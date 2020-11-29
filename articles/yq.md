@@ -1,6 +1,6 @@
 # モチベーション
 最近 Kubernetes をいじり始めて yaml ファイルを扱うことが増えてきた。
-そんな中， CIでマニフェストのimageのtag名を更新したくなり，いろいろ調べた結果，yqが良さそうということで使い方を調べてみた．
+そんな中， CIでマニフェストの image の tag 名を更新したくなり，いろいろ調べた結果， yq が良さそうということで使い方を調べてみた。
 
 # yqとは
 > yq is a lightweight and portable command-line YAML processor
