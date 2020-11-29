@@ -6,27 +6,36 @@
   },
   "rules": {
     "preset-ja-technical-writing": {
-        "no-exclamation-question-mark": {
+      "no-exclamation-question-mark": {
         "allowFullWidthExclamation": true,
-        "allowFullWidthQuestion": true,
+        "allowFullWidthQuestion": true
       },
       "no-doubled-joshi": {
-         "strict": false,
-         "allow": ["か"], // 助詞のうち「か」は複数回の出現を許す(e.g.: するかどうか)
+        "strict": false,
+        "allow": ["か"] // 助詞のうち「か」は複数回の出現を許す(e.g.: するかどうか)
       }
     },
     "preset-ja-spacing": {
+      // 半角文字と全角文字にスペースを入れる
       "ja-space-between-half-and-full-width": {
-        space: "always",
-        exceptPunctuation: true,
+        "space": "always",
+        "exceptPunctuation": true // 句読点は無視
       },
+      // インラインコードの周りをスペースで囲む
       "ja-space-around-code": {
         "before": true,
         "after": true
       }
     },
     "ja-technical-writing/ja-no-mixed-period": {
-      "allowPeriodMarks": [":"],
+      // 優先する句点文字
+      "periodMark": "。",
+      // 句点文字として許可する文字列の配列
+      "allowPeriodMarks": [":"]
+    },
+    "ja-technical-writing/no-mix-dearu-desumasu": {
+      "preferInHeader": "", // "である" or "ですます"
+      "preferInBody": "ですます" // "である" or "ですます"
     },
     "ja-technical-writing/sentence-lengh": false //100文字数制限の無効化
   }
