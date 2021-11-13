@@ -18,5 +18,8 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mt-pooh/blog/issues"
+  },
+  "dependencies": {
+    "zenn-cli": "^0.1.98"
   }
 }
