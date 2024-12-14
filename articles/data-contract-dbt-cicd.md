@@ -3,6 +3,7 @@ title: "Data Contract CLIでデータテストを行い、dbtのschemaを生成�
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["CICD", "DataContract", "dbt", "GitHubActions"]
+publication_name: "finatext"
 published: false
 ---
 
