@@ -49,19 +49,45 @@ Data Contractは概念としては素晴らしいですが、実際にどうや�
 ## 各Stepの詳細
 
 ### Data ContractのYAML validation、データテスト
-Data Contractのyamlファイルの構文チェックと、実データとの整合性チェックを行う
+Data Contractのyamlファイルの構文チェックと、実データとの整合性チェックを行います。
+これらの処理は[Data Contract CLI](https://github.com/datacontract/datacontract-cli)を使用します。
 
+以下が実際のGitHub Actionsのワークフローの一部です。
+
+```yaml
+name: Data Contract Workflow
 TBD
+```
 
 ### Data ContractのHTML生成
-Data Contractのyamlファイルからhtmlファイルを生成し、S3にアップロードする。これにより、データオーナーやデータ基盤チームがData Contractの内容を確認できるようになる。
+Data Contractのyamlファイルからhtmlファイルを生成し、S3にアップロードします。あらかじめ、S3にはCloudFrontと連携してホスティングできるようにしておきます。これにより、データオーナーやデータ基盤チームがData Contractの内容を確認できるようになる。
 
+Data ContractのHTML生成には同じく[Data Contract CLI](https://github.com/datacontract/datacontract-cli)を使用します。
+
+TODO: ここにData ContractのHTMLの画面のスクショを貼る
+
+以下が実際のGitHub Actionsのワークフローの一部です。
+
+```yaml
+name: Data Contract Workflow
 TBD
+```
+
 
 ### dbtのschema.ymlを取得しPull Requestを作成
 Data Contractのyamlファイルからdbtのschema.ymlファイルを生成し、dbtプロジェクトを管理するリポジトリにPull Requestを作成する。これにより、データ基盤チームはソースデータを素早くデータ基盤に反映できるようになる。
 
+以下が実際のGitHub Actionsのワークフローの一部です。
+
+Data Contract リポジトリ側
+```yaml
 TBD
+```
+
+dbt リポジトリ側
+```yaml
+name: dbt Workflow
+```
 
 ## 今回のCI/CDによる恩恵
 - 実データに対する整合性チェックにより、連携されるソースデータの信頼性が担保される
@@ -79,3 +105,4 @@ TBD
 
 ## まとめ
 本記事では、Data ContractとCICD連携によるデータテストとdbt schema生成の自動化について紹介しました。Data Contractの概念は素晴らしいものの、実際の運用には課題もあります。しかし、本CI/CDの取り組みにより、ソースデータの信頼性向上やデータ基盤への反映スピードアップなどの効果が期待できます。今後、Data Contractの利用が広がり、より使いやすいツールが登場することで、データ品質管理の自動化がさらに進むことが期待されます。
+
