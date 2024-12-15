@@ -4,7 +4,7 @@ emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["CICD", "DataContract", "dbt", "GitHubActions"]
 publication_name: "finatext"
-published: false
+published: true
 ---
 この記事は[datatech-jp Advent Calendar 2024](https://qiita.com/advent-calendar/2024/datatech-jp)の15日目の記事です。
 
