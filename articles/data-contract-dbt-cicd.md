@@ -264,17 +264,20 @@ jobs:
 ### dbtのschema.ymlを取得しPull Requestを作成
 Data Contractのyamlファイルからdbtのschema.ymlファイルを生成し、dbtプロジェクトを管理するリポジトリにPull Requestを作成する。これにより、データ基盤チームはソースデータを素早くデータ基盤に反映できるようになる。
 
+Data ContractのYAMLからdbtのschema.ymlを生成するには、Data Contract CLIの`export`コマンドを使用します。
+
+```bash
+datacontract export data_contracts/sample/customer.yaml --format dbt
+```
+
+:::message
+2024/12/15現在、datacontract exportコマンドはまだまだ開発途中であり、これにより生成されたdbt schema.ymlをそのまま利用することは難しいです。そのため、人間が手動で修正する必要があります。
+:::
+
 以下が実際のGitHub Actionsのワークフローの一部です。
+別リポジトリへのブランチの作成・コミット・プッシュ・PRの作成を行うためにGitHub Appを利用すると良いです。
 
-Data Contract リポジトリ側
-```yaml
-TBD
-```
-
-dbt リポジトリ側
-```yaml
-name: dbt Workflow
-```
+ref: [GitHub Apps / GitHub Actionsを使って別のリポジトリにファイルをコピーするPRを作成する](https://zenn.dev/mh4gf/articles/copy-file-to-another-repository)
 
 ## 今回のCI/CDによる恩恵
 - 実データに対する整合性チェックにより、連携されるソースデータの信頼性が担保される
