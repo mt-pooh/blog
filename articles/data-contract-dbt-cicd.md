@@ -6,6 +6,7 @@ topics: ["CICD", "DataContract", "dbt", "GitHubActions"]
 publication_name: "finatext"
 published: false
 ---
+この記事は[datatech-jp Advent Calendar 2024](https://qiita.com/advent-calendar/2024/datatech-jp)の15日目の記事です。
 
 ## 背景
 データのスキーマは様々な理由で変更されることがあり、データオーナー側はその変更の影響範囲を正確に把握することが難しいです。
@@ -47,31 +48,217 @@ Data Contractは概念としては素晴らしいですが、実際にどうや�
 7. (データ基盤チーム)上記で作成されたPull Requestを編集しパイプラインにソースデータを組み込み反映する。
 
 ## 各Stepの詳細
+data contractのリポジトリでは`data_contracts`ディレクトリにYAMLファイルを配置します。今回はサンプルで以下のようなYAMLファイルを配置します。
+
+```yaml: data_contracts/samplecustomer.yaml
+dataContractSpecification: 1.1.0
+id: data_contract_sample:custmer
+info:
+  title: custmer
+  version: 0.0.1
+  description: "sample for data contract"
+  owner: "koki muguruma"
+  contact:
+    name: "koki muguruma"
+    email: koki.muguruma@finatext.com
+servers:
+  dev: # 開発環境
+    type: s3
+    location: "s3://hoge/tables/sample/v1/customer.csv"
+    format: csv
+    description: "sample for data contract csv"
+models:
+  customer:
+    description: "all customer"
+    fields:
+      name:
+        description: 人物の名前
+        type: text
+        required: true
+        primary: false
+        unique: false
+        enum: []
+        pii: true
+      age:
+        description: 人物の年齢
+        type: integer
+        required: true
+        primary: false
+        unique: false
+        enum: []
+        pii: false
+      sex:
+        description: 人物の性別
+        type: text
+        required: true
+        primary: false
+        unique: false
+        enum:
+          - 男性
+          - 女性
+        pii: false
+      email:
+        description: 人物のメールアドレス
+        type: text
+        required: true
+        primary: false
+        unique: true
+        format: email
+        enum: []
+        pii: true
+      phone_number:
+        description: 人物の電話番号
+        type: text
+        required: false
+        primary: false
+        unique: false
+        enum: []
+        pii: true
+example:
+  - type: csv
+    description: head(3)
+    data: |
+      名前,年齢,性別,メールアドレス,電話番号
+      山田太郎,28,男性,yamada@example.com,090-1234-5678
+      佐藤花子,32,女性,sato@example.com,080-2345-6789
+      鈴木一郎,45,男性,suzuki@example.com,070-3456-7890
+servicelevels:
+  frequency:
+    description: update data in one shot.
+    # type: batch
+    # interval: daily
+    # cron: "0 0 * * *"  
+  support:
+    description: サポートが提供される時間
+    time: "平日 9:00 - 18:00"
+    responseTime: "24時間以内"
+```
 
 ### Data ContractのYAML validation、データテスト
 Data Contractのyamlファイルの構文チェックと、実データとの整合性チェックを行います。
-これらの処理は[Data Contract CLI](https://github.com/datacontract/datacontract-cli)を使用します。
+これらの処理は[Data Contract CLI](https://github.com/datacontract/datacontract-cli)の`lint`コマンド、`test`コマンドを使用します。
 
-以下が実際のGitHub Actionsのワークフローの一部です。
+また、Data Contract CLIは破壊的な変更があるかどうかをチェックする`breaking`コマンドも提供しています。こちらも必要に応じて実行します。
 
-```yaml
-name: Data Contract Workflow
-TBD
-```
 
 ### Data ContractのHTML生成
 Data Contractのyamlファイルからhtmlファイルを生成し、S3にアップロードします。あらかじめ、S3にはCloudFrontと連携してホスティングできるようにしておきます。これにより、データオーナーやデータ基盤チームがData Contractの内容を確認できるようになる。
 
-Data ContractのHTML生成には同じく[Data Contract CLI](https://github.com/datacontract/datacontract-cli)を使用します。
+Data ContractのHTML生成には同じくData Contract CLIの`catalog`コマンドを使用します。
 
-TODO: ここにData ContractのHTMLの画面のスクショを貼る
+![](https://storage.googleapis.com/zenn-user-upload/27649d11a1d4-20241215.png)
+*DataContract catalogのindexページ*
+
+![](https://storage.googleapis.com/zenn-user-upload/a0e7477809fb-20241215.png)
+*各DataContractのページ*
 
 以下が実際のGitHub Actionsのワークフローの一部です。
+:::details GitHub Actionsのワークフロー
 
 ```yaml
-name: Data Contract Workflow
-TBD
+name: CI_data_contract_test
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - "data_contracts/**"
+
+jobs:
+  call_data_contract_test:
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write
+
+    env:
+      DATACONTRACT_SNOWFLAKE_USERNAME: ${Snowflakeのデータに対しての認証情報}
+      DATACONTRACT_SNOWFLAKE_PASSWORD: ${Snowflakeのデータに対しての認証情報}
+      DATACONTRACT_SNOWFLAKE_WAREHOUSE: ${Snowflakeのデータに対しての認証情報}
+      DATACONTRACT_SNOWFLAKE_ROLE: ${Snowflakeのデータに対しての認証情報}
+      DATACONTRACT_SNOWFLAKE_CONNECTION_TIMEOUT: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install "datacontract-cli[all]==0.10.15"
+
+      - name: Configure AWS Credentials
+        id: aws-credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}  # AWSリージョンを指定
+          role-to-assume: ${{ secrets.AWS_ROLE_GITHUB_ACTIONS_DEV_ARN }}  # ロールARNを指定
+
+      - name: git diff
+        id: git_diff
+        run: |
+          BASE_BRANCH="${{ github.event.pull_request.base.ref }}"
+          HEAD_BRANCH="${{ github.event.pull_request.head.ref }}"
+          TARGET_DIR="data_contracts/"
+
+          git fetch origin $BASE_BRANCH
+          git fetch origin $HEAD_BRANCH
+          DIFF_FILES=$(git diff --name-only origin/$BASE_BRANCH origin/$HEAD_BRANCH -- $TARGET_DIR)
+
+          DIFF_FILES_COMMA_SEPARATED=$(echo "$DIFF_FILES" | tr '\n' ',')
+          echo "DIFF_FILES=$DIFF_FILES_COMMA_SEPARATED" >> $GITHUB_ENV
+
+      - name: Data contract test
+        run: |
+          set -Ceu
+
+          echo "DIFF_FILES: $DIFF_FILES"  # デバッグ用に出力
+          IFS=',' read -r -a FILES <<< "$DIFF_FILES"
+          for FILE in "${FILES[@]}"; do
+            echo "Processing file: $FILE"
+            datacontract lint "$FILE"
+            datacontract test "$FILE"
+          done
+
+      - name: datacontract breaking
+        run: |
+          set -Ceu
+
+          NEW_DIR="tmp"
+          mkdir -p "$NEW_DIR"
+          BASE_BRANCH="${{ github.event.pull_request.base.ref }}"
+          git fetch origin $BASE_BRANCH
+
+          IFS=',' read -r -a FILES <<< "$DIFF_FILES"
+          for FILE in "${FILES[@]}"; do
+            if ! git show "origin/$BASE_BRANCH:$FILE" &> /dev/null; then
+              echo "File $FILE does not exist in base branch $BASE_BRANCH. Skipping."
+              continue
+            fi
+
+            mkdir -p "$NEW_DIR/$(dirname "$FILE")"
+            git show "origin/$BASE_BRANCH:$FILE" > "$NEW_DIR/$FILE"
+            datacontract breaking "$NEW_DIR/$FILE" "$FILE"
+          done
+
+      - name: Export Data Contract
+        run: datacontract catalog --files "./data_contracts/*/*.yaml" --output ./catalog/
+      
+      - name: Export to S3 Bucket dev
+        run: aws s3 sync ./catalog/ s3://"$DEV_DATA_CONTRACT_HTML_BUCKET"/html/ --delete
 ```
+
+`datacontract lint` でYAMLの構文チェックを行い、`datacontract test` で実データとの整合性チェックを行います。
+その後、`datacontract catalog` でData ContractのHTMLを生成し、S3にアップロードします。
+
+:::
 
 
 ### dbtのschema.ymlを取得しPull Requestを作成
