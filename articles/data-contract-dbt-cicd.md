@@ -49,8 +49,9 @@ Data Contractは概念としては素晴らしいですが、実際にどうや�
 
 ## 各Stepの詳細
 data contractのリポジトリでは`data_contracts`ディレクトリにYAMLファイルを配置します。今回はサンプルで以下のようなYAMLファイルを配置します。
+S3にCSVファイルが配置されている前提で、そのデータに対するContractを定義します。
 
-```yaml: data_contracts/samplecustomer.yaml
+```yaml: data_contracts/sample/customer.yaml
 dataContractSpecification: 1.1.0
 id: data_contract_sample:custmer
 info:
@@ -277,8 +278,6 @@ datacontract export data_contracts/sample/customer.yaml --format dbt
 
 そして生成されたdbt schema.ymlは一旦S3に配置します。その後dbt repo側でschema.ymlを取得してPRを自動作成します。
 
-
-以下が実際のGitHub Actionsのワークフローの一部です。
 別リポジトリへのブランチの作成・コミット・プッシュ・PRの作成を行うためにGitHub Appを利用すると良いです。
 
 ref: [GitHub Apps / GitHub Actionsを使って別のリポジトリにファイルをコピーするPRを作成する](https://zenn.dev/mh4gf/articles/copy-file-to-another-repository)
@@ -300,4 +299,6 @@ ref: [GitHub Apps / GitHub Actionsを使って別のリポジトリにファイ�
 
 ## まとめ
 本記事では、Data ContractとCICD連携によるデータテストとdbt schema生成の自動化について紹介しました。Data Contractの概念は素晴らしいものの、実際の運用には課題もあります。しかし、本CI/CDの取り組みにより、ソースデータの信頼性向上やデータ基盤への反映スピードアップなどの効果が期待できます。今後、Data Contractの利用が広がり、より使いやすいツールが登場することで、データ品質管理の自動化がさらに進むことが期待されます。
+
+とりわけData Contract CLIはコンセプトとして素晴らしいツールであるため、私自身もコントリビュートしていきたい所存です！
 
