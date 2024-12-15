@@ -143,7 +143,7 @@ Data Contractのyamlファイルの構文チェックと、実データとの整
 
 
 ### Data ContractのHTML生成
-Data Contractのyamlファイルからhtmlファイルを生成し、S3にアップロードします。あらかじめ、S3にはCloudFrontと連携してホスティングできるようにしておきます。これにより、データオーナーやデータ基盤チームがData Contractの内容を確認できるようになる。
+Data Contractのyamlファイルからhtmlファイルを生成し、S3にアップロードします。あらかじめ、S3にはCloudFrontと連携してホスティングできるようにしておきます。これにより、データオーナーやデータ基盤チームがData Contractの内容を確認できるようになります。
 
 Data ContractのHTML生成には同じくData Contract CLIの`catalog`コマンドを使用します。
 
