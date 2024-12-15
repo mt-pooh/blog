@@ -152,7 +152,7 @@ Data ContractのHTML生成には同じくData Contract CLIの`catalog`コマン�
 ![](https://storage.googleapis.com/zenn-user-upload/a0e7477809fb-20241215.png)
 *各DataContractのページ*
 
-以下が実際のGitHub Actionsのワークフローの一部です。
+ここまでの内容をGitHub Actionsで定義したものは以下となります。
 :::details GitHub Actionsのワークフロー
 
 ```yaml
@@ -262,7 +262,7 @@ jobs:
 
 
 ### dbtのschema.ymlを取得しPull Requestを作成
-Data Contractのyamlファイルからdbtのschema.ymlファイルを生成し、dbtプロジェクトを管理するリポジトリにPull Requestを作成する。これにより、データ基盤チームはソースデータを素早くデータ基盤に反映できるようになる。
+Data Contractのyamlファイルからdbtのschema.ymlファイルを生成し、dbtプロジェクトを管理するリポジトリにPull Requestを作成します。これにより、データ基盤チームはソースデータを素早くデータ基盤に反映できるようになります。
 
 Data ContractのYAMLからdbtのschema.ymlを生成するには、Data Contract CLIの`export`コマンドを使用します。
 
@@ -270,14 +270,19 @@ Data ContractのYAMLからdbtのschema.ymlを生成するには、Data Contract 
 datacontract export data_contracts/sample/customer.yaml --format dbt
 ```
 
+
 :::message
 2024/12/15現在、datacontract exportコマンドはまだまだ開発途中であり、これにより生成されたdbt schema.ymlをそのまま利用することは難しいです。そのため、人間が手動で修正する必要があります。
 :::
+
+そして生成されたdbt schema.ymlは一旦S3に配置します。その後dbt repo側でschema.ymlを取得してPRを自動作成します。
+
 
 以下が実際のGitHub Actionsのワークフローの一部です。
 別リポジトリへのブランチの作成・コミット・プッシュ・PRの作成を行うためにGitHub Appを利用すると良いです。
 
 ref: [GitHub Apps / GitHub Actionsを使って別のリポジトリにファイルをコピーするPRを作成する](https://zenn.dev/mh4gf/articles/copy-file-to-another-repository)
+
 
 ## 今回のCI/CDによる恩恵
 - 実データに対する整合性チェックにより、連携されるソースデータの信頼性が担保される
