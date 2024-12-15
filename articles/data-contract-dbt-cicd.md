@@ -23,9 +23,9 @@ Data Contractでは、データの送り手（データオーナー）と受け�
 Data Contractは概念としては素晴らしいですが、実際にどうやって運用していくかが課題だと思います。運用をしていく上で**自動化**は重要だと思っており、今回はData Contractのyamlは手動で作る前提で、Data Contractさえ作れば、データテスト、dbtのschema.ymlの生成を自動化するCI/CDを構築します。
 
 ### 実現したいこと
-- data contractのyamlをvalidateして、かつ実データに対してテストを行う
-- data contractのhtmlを生成してホスティングし、閲覧できるようにする
-- data contractのyamlからdbtのschema.ymlを生成する
+- Data Contractのyamlをvalidateして、かつ実データに対してテストを行う
+- Data Contractのhtmlを生成してホスティングし、閲覧できるようにする
+- Data Contractのyamlからdbtのschema.ymlを生成する
 
 ### 前提
 - Data ContractはGitHubで管理する
@@ -48,7 +48,7 @@ Data Contractは概念としては素晴らしいですが、実際にどうや�
 7. (データ基盤チーム)上記で作成されたPull Requestを編集しパイプラインにソースデータを組み込み反映する。
 
 ## 各Stepの詳細
-data contractのリポジトリでは`data_contracts`ディレクトリにYAMLファイルを配置します。今回はサンプルで以下のようなYAMLファイルを配置します。
+Data Contractのリポジトリでは`data_contracts`ディレクトリにYAMLファイルを配置します。今回はサンプルで以下のようなYAMLファイルを配置します。
 S3にCSVファイルが配置されている前提で、そのデータに対するContractを定義します。
 
 ```yaml: data_contracts/sample/customer.yaml
@@ -57,7 +57,7 @@ id: data_contract_sample:custmer
 info:
   title: custmer
   version: 0.0.1
-  description: "sample for data contract"
+  description: "sample for Data Contract"
   owner: "koki muguruma"
   contact:
     name: "koki muguruma"
@@ -67,7 +67,7 @@ servers:
     type: s3
     location: "s3://hoge/tables/sample/v1/customer.csv"
     format: csv
-    description: "sample for data contract csv"
+    description: "sample for Data Contract csv"
 models:
   customer:
     description: "all customer"
@@ -216,7 +216,7 @@ jobs:
           DIFF_FILES_COMMA_SEPARATED=$(echo "$DIFF_FILES" | tr '\n' ',')
           echo "DIFF_FILES=$DIFF_FILES_COMMA_SEPARATED" >> $GITHUB_ENV
 
-      - name: Data contract test
+      - name: Data Contract test
         run: |
           set -Ceu
 
@@ -292,7 +292,7 @@ ref: [GitHub Apps / GitHub Actionsを使って別のリポジトリにファイ�
 ## 課題点
 - Data Contract CLIはまだ開発途中であり、機能が不足している
   - dbtのschema.ymlを生成する機能には不十分感が強い
-  - なので、data contract生成からのdbt schema.yml生成までをCI/CDで完結させることは難しい(humanによる手動作業が必要)
+  - なので、Data Contract生成からのdbt schema.yml生成までをCI/CDで完結させることは難しい(humanによる手動作業が必要)
 - データオーナー側はData ContractのYAMLを作成する必要があるため、データオーナー側の負担が大きい
   - こちらに関しては、Data ContractのYAMLをより簡単に作成できるツール・仕組みがあれば解決できるかもしれない
 
