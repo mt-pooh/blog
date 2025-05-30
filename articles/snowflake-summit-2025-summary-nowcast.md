@@ -4,7 +4,7 @@ emoji: "❄️"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["Snowflake"]
 publication_name: "finatext"
-published: true
+published: false
 ---
 
 サンフランシスコで開催されたSnowflake Summit 2025にナウキャストのメンバーで参加しました。
