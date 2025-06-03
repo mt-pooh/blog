@@ -1,5 +1,5 @@
 ---
-title: "【更新中】Snowflake Summit 2025 参加レポートまとめ"
+title: "【更新中】ナウキャスト Snowflake Summit 2025 参加レポートまとめ"
 emoji: "❄️"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["Snowflake", "AI", "dataengineering", "SnowflakeSummit"]
