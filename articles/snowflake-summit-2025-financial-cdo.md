@@ -15,7 +15,7 @@ https://zenn.dev/finatext/articles/snowflake-summit-2025-summary-nowcast
 
 ## はじめに
 
-2025年のSnowflake Summitで開催された「Driving AI-Readiness with Trusted Data: Insights from Financial Services Leaders」は、金融サービス業界のCDOやデータリーダーが集い、AI導入の現場で直面する課題や、信頼できるデータ基盤の重要性について議論したセッションでした。
+2025年のSnowflake Summitで開催された「[Driving AI-Readiness with Trusted Data: Insights from Financial Services Leaders](https://reg.summit.snowflake.com/flow/snowflake/summit25/sessions/page/catalog/session/1741986831135001yNhN)」は、金融サービス業界のCDOやデータリーダーが集い、AI導入の現場で直面する課題や、信頼できるデータ基盤の重要性について議論したセッションでした。
 
 本記事では、パネリストの発言や会場での質疑応答をもとに、金融業界におけるAI活用のリアルと、今後のデータ戦略のヒントをまとめます。
 
