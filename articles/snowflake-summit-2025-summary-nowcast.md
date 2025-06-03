@@ -15,6 +15,7 @@ published: false
 ### セッション
 
 - Driving AI-Readiness with Trusted Data: Insights from Financial Services Leaders
+
 https://zenn.dev/finatext/articles/snowflake-summit-2025-financial-cdo
 
 ## 2日目
