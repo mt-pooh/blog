@@ -20,6 +20,7 @@ published: false
 - **Durgesh Das**（Intercontinental Exchange / New York Stock Exchange VP, Data, Analytics & Governance）
 - **Lee Davidson**（Morningstar Former Chief Data and Analytics Officer）
 
+![](https://storage.googleapis.com/zenn-user-upload/b7a88852f0c0-20250603.png)
 ## セッション内容
 
 ### AIセンターオブエクセレンス（AIC）の設立とROI重視
