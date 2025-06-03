@@ -16,6 +16,10 @@ summit期間中は更新を続けていきます！
 
 ### セッション
 
+- Best Practices for Protecting Against Credential Theft and Data Exfiltration
+
+https://zenn.dev/finatext/articles/564503253eeb55
+
 - Driving AI-Readiness with Trusted Data: Insights from Financial Services Leaders
 
 https://zenn.dev/finatext/articles/snowflake-summit-2025-financial-cdo
