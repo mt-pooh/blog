@@ -1,5 +1,5 @@
 ---
-title: "Snowflake Summit 2025 セッション「Driving AI-Readiness with Trusted Data: Insights from Financial Services Leaders」参加レポート"
+title: "Snowflake Summit 2025 金融CDOセッション参加レポート"
 emoji: "❄️"
 type: "idea"
 topics: ["Snowflake", "AI", "Financial Services"]
