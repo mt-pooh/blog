@@ -4,7 +4,7 @@ emoji: "❄️"
 type: "idea"
 topics: ["Snowflake", "AI", "Financial Services"]
 publication_name: "finatext"
-published: false
+published: true
 ---
 
 ## はじめに
