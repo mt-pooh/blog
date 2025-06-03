@@ -24,6 +24,10 @@ https://zenn.dev/finatext/articles/564503253eeb55
 
 https://zenn.dev/finatext/articles/snowflake-summit-2025-financial-cdo
 
+- Modernizing Massive File System Infrastructure at Morgan Stanley
+
+https://zenn.dev/finatext/articles/session-report-snowflake-summit-de301
+
 ## 2日目
 
 ## 3日目
