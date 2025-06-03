@@ -28,6 +28,14 @@ https://zenn.dev/finatext/articles/snowflake-summit-2025-financial-cdo
 
 https://zenn.dev/finatext/articles/session-report-snowflake-summit-de301
 
+- Future-Proofing Your Data Team: Embracing DataOps and Modern Best Practices
+
+https://zenn.dev/finatext/articles/8b5424d161f48c
+
+- AI/LLM系
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-report-day1
+
 ## 2日目
 
 ## 3日目
