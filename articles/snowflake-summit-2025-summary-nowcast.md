@@ -37,6 +37,31 @@ https://zenn.dev/finatext/articles/8b5424d161f48c
 https://zenn.dev/finatext/articles/snowflake-summit-2025-report-day1
 
 ## 2日目
+### platform keynote
+
+https://zenn.dev/finatext/articles/db766782b40e2c
+
+### セッション
+
+- What's New: Faster Insights with Snowflake Standard Warehouse - Gen2 and Adaptive Compute
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-adaptive-compute
+
+- Whats New: Snowflake Intelligence and No-Code Agentic AI
+
+https://zenn.dev/finatext/articles/session-report-snowflake-summit-wn214b
+
+- The Financial Services Data, Apps and AI Guide
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-financial-apps
+
+- Orchestrating Data Analytics Workloads with SQL and Python
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-de107
+
+- AI/LLM系
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-report-day2
 
 ## 3日目
 
