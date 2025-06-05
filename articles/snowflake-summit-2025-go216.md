@@ -44,7 +44,9 @@ Ankit Gupta氏は、IBMの2024年データ侵害レポートを引用し、デ�
 ### Snowflake Horizonの概要と機能
 
 Horizonカタログは、データガバナンス・セキュリティ・検出を初期段階から実現し、Snowflake内外のデータ全体を最小限のセットアップで保護・管理できると説明されました。
-![](https://storage.googleapis.com/zenn-user-upload/42583949145b-20250606.png)
+![](https://storage.googleapis.com/zenn-user-upload/206bc5526b79-20250606.png)
+https://www.snowflake.com/en/product/features/horizon/ より引用
+
 
 Horizon Catalogの詳細は以下の記事を参照ください！
 
