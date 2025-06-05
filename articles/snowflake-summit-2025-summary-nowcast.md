@@ -59,10 +59,36 @@ https://zenn.dev/finatext/articles/snowflake-summit-2025-financial-apps
 
 https://zenn.dev/finatext/articles/snowflake-summit-2025-de107
 
+- The Future of Retail and Consumer Goods
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-retail-future
+
 - AI/LLM系
 
 https://zenn.dev/finatext/articles/snowflake-summit-2025-report-day2
 
 ## 3日目
+
+### セッション
+
+- How Pfizer Saved 30% by Consolidating Snowflake Warehouses
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-consolidating-warehouse
+
+- What's New: Accelerating Data Ecosystem Migrations to Snowflake
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-snowconvert-ai-overview
+
+- What's New: Governance and Security for Data and AI with Horizon Catalog
+
+https://zenn.dev/shichimi/articles/session-report-snowflake-summit-wn209b
+
+- Solving Last Mile Analytics Using Snowflake Cortex AI and Sigma Data Apps
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-sigma-handson
+
+- AI/LLM系
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-report-day3
 
 ## 4日目
