@@ -63,6 +63,10 @@ https://zenn.dev/finatext/articles/snowflake-summit-2025-de107
 
 https://zenn.dev/finatext/articles/snowflake-summit-2025-retail-future
 
+- Best Practices for Protecting Sensitive Data and Simplifying Compliance
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-go216
+
 - AI/LLM系
 
 https://zenn.dev/finatext/articles/snowflake-summit-2025-report-day2
