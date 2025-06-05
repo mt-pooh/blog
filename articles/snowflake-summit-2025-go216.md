@@ -4,7 +4,7 @@ emoji: "❄️"
 type: "idea"
 topics: ["Snowflake", "security", "dataengineering", "SnowflakeSummit"]
 publication_name: "finatext"
-published: false
+published: true
 ---
 
 :::message
