@@ -71,6 +71,10 @@ https://zenn.dev/finatext/articles/snowflake-summit-2025-report-day2
 
 ### セッション
 
+- What's New: Scaling Data Pipelines with SQL, dbt Projects, and Python
+
+https://zenn.dev/finatext/articles/26e88b589ec054
+
 - How Pfizer Saved 30% by Consolidating Snowflake Warehouses
 
 https://zenn.dev/finatext/articles/snowflake-summit-2025-consolidating-warehouse
