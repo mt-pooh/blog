@@ -46,7 +46,11 @@ Ankit Gupta氏は、IBMの2024年データ侵害レポートを引用し、デ�
 Horizonカタログは、データガバナンス・セキュリティ・検出を初期段階から実現し、Snowflake内外のデータ全体を最小限のセットアップで保護・管理できると説明されました。
 ![](https://storage.googleapis.com/zenn-user-upload/42583949145b-20250606.png)
 
-各機能を以下で紹介します。
+Horizon Catalogの詳細は以下の記事を参照ください！
+
+https://zenn.dev/finatext/articles/session-report-snowflake-summit-wn209b?redirected=1
+
+今回は機密データの保護に関わる機能を以下で紹介します。
 
 #### 自動機密データ分類
 
@@ -108,7 +112,8 @@ Ankit Gupta氏は、今後のHorizonの機能強化として
 - 監査・コンプライアンスの標準化
 - EUやインド向けの新しい分類子追加
 - 新しい列やスキーマ変更時の自動分類トリガー
-などを紹介されていました。
+
+などが紹介されていました。
 
 ![](https://storage.googleapis.com/zenn-user-upload/e09e1c017278-20250606.png)
 
@@ -118,6 +123,7 @@ Ankit Gupta氏は、今後のHorizonの機能強化として
 - 最小特権の原則に基づくアクセス制御
 - 行アクセス・マスキングポリシーの適用
 - 機密データへのアクセス監視と変更監視の定期実施
+
 を推奨し、コンプライアンスは継続的なプロセスであると強調されていました。
 
 ## まとめ・感想
