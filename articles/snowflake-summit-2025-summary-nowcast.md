@@ -100,3 +100,20 @@ https://zenn.dev/finatext/articles/snowflake-summit-2025-sigma-handson
 https://zenn.dev/finatext/articles/snowflake-summit-2025-report-day3
 
 ## 4日目
+### セッション
+- Best Practices for Boosting Your Snowflake Query Performance
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-boost-query-performance
+
+- Optimize storage costs using Storage Lifecycle Policies
+
+https://zenn.dev/finatext/articles/session-report-snowflake-summit-ar305
+
+- Build and Deploy Visual Language Models for Unstructured Data Processing
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-vlm-unstructured-data
+
+- What's New: Build, Test and Deploy Products with Developer Tooling
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-whtnew-tools
+
