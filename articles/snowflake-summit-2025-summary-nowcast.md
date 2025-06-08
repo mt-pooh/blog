@@ -116,3 +116,7 @@ https://zenn.dev/finatext/articles/snowflake-summit-2025-vlm-unstructured-data
 - What's New: Build, Test and Deploy Products with Developer Tooling
 
 https://zenn.dev/finatext/articles/snowflake-summit-2025-whtnew-tools
+
+- Real-Time Insights at Scale: OLTP Database CDC Streaming with Snowflake Openflow
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-openflow-cdc-streaming
