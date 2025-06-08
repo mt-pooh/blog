@@ -116,4 +116,3 @@ https://zenn.dev/finatext/articles/snowflake-summit-2025-vlm-unstructured-data
 - What's New: Build, Test and Deploy Products with Developer Tooling
 
 https://zenn.dev/finatext/articles/snowflake-summit-2025-whtnew-tools
-
