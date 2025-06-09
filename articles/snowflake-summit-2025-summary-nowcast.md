@@ -118,3 +118,12 @@ https://zenn.dev/finatext/articles/snowflake-summit-2025-whtnew-tools
 - Real-Time Insights at Scale: OLTP Database CDC Streaming with Snowflake Openflow
 
 https://zenn.dev/finatext/articles/snowflake-summit-2025-openflow-cdc-streaming
+
+- What’s New: Snowflake AI Research
+
+https://zenn.dev/finatext/articles/snowflake-summit-2025-report-day4
+
+## 全体まとめ
+- Snowflake Intelligenceの使い方を徹底解説
+
+https://zenn.dev/finatext/articles/35fcaa0e6e3583
