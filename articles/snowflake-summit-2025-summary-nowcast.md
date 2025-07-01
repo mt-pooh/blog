@@ -127,3 +127,27 @@ https://zenn.dev/finatext/articles/snowflake-summit-2025-report-day4
 - Snowflake Intelligenceの使い方を徹底解説
 
 https://zenn.dev/finatext/articles/35fcaa0e6e3583
+
+## DataOps Night 特別編 Snowflake Summit 2025振り返り会 資料
+
+ナウキャストがSnowflake Summit 2025でのセッションを振り返るイベントを開催しました。
+
+https://finatext.connpass.com/event/358431/
+
+以下がその際の資料です。
+
+- Snowflake Summit 2025全体振り返り
+
+https://speakerdeck.com/mtpooh/snowflake-summit-2025-overall-review
+
+- Snowflake Summit 2025 活用事例 レポート
+
+https://speakerdeck.com/kkuv/nowcast-snowflake-summit-2025-case-study-report
+
+- Snowflake Summit 2025 AI/LLM系機能Recap
+
+https://speakerdeck.com/takumimukaiyama/llmxi-ji-neng-recap
+
+- Snowflake Summit 2025 データエンジニアリング関連新機能紹介
+
+https://speakerdeck.com/tiltmax3/snowflake-summit-2025-whats-new-about-data-engineering
