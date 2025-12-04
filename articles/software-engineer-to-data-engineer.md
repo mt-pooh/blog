@@ -4,7 +4,8 @@ emoji: "📘"
 type: "idea"
 topics: ["dataengineer", "career", "キャリア"]
 publication_name: "finatext"
-published: false
+published: true
+published_at: 2025-12-05 06:00
 ---
 この記事は、[ナウキャスト Advent Calendar 2025](https://qiita.com/advent-calendar/2025/nowcast) の5日目の記事です。
 
