@@ -19,7 +19,7 @@ published: false
 「データエンジニアに転向してみようかな」と少しでも思っているソフトウェアエンジニアの方の背中を押すことができれば幸いです。
 
 この内容は以下スライドにもまとめていますので、ぜひご覧ください。
-https://speakerdeck.com/mtpooh/swe-vs-de-ltlt
+https://speakerdeck.com/mtpooh/swe-vs-de-lt
 
 ## なぜ今、データエンジニアなのか？
 
