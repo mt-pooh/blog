@@ -4,7 +4,8 @@ emoji: "🌉"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["MCP", "AI", "エンタープライズ", "AWS", "AgentCore"]
 publication_name: "finatext"
-published: false
+published: true
+published_at: 2026-03-12 09:00
 ---
 
 こんにちは、ナウキャスト データ AI ソリューション事業のリードエンジニアの六車です。
