@@ -4,7 +4,8 @@ emoji: "🧪"
 type: "idea"
 topics: ["採用", "dataengineer", "llm", "スキルテスト", "エンジニア採用"]
 publication_name: "finatext"
-published: false
+published: true
+published_at: 2026-03-11 09:00
 ---
 
 こんにちは、ナウキャストでリードエンジニアをしている六車です。
