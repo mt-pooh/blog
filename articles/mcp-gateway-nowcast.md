@@ -86,7 +86,7 @@ MCP が完璧なプロトコルだとは思っていません。CLI 派の指摘
 
 MCPass は、AI クライアントと MCP サーバー群の間に配置される **単一の統制されたエントリーポイント** です。
 
-![](https://storage.googleapis.com/zenn-user-upload/73bb888eac7f-20260310.jpg)
+![](https://storage.googleapis.com/zenn-user-upload/a86f96645645-20260324.png)
 
 前回記事が整理した課題と、各コンポーネントの対応関係は以下のとおりです。
 
