@@ -4,7 +4,8 @@ emoji: "⛩️"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["イベントレポート", "datascience", "dataengineering", "勉強会"]
 publication_name: "finatext"
-published: false
+published: true
+published_at: "2026-05-11 10:00"
 ---
 
 ![](https://static.zenn.studio/user-upload/8756e4de8cbb-20260427.png)
