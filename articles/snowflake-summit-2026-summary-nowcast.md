@@ -4,7 +4,8 @@ emoji: "❄️"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["Snowflake", "AI", "dataengineering", "SnowflakeSummit"]
 publication_name: "finatext"
-published: false
+published: true
+published_at: 2026-05-27 10:00
 ---
 
 2026年6月1日から4日の4日間、サンフランシスコで開催されるSnowflake Summit 2026にナウキャストのメンバーが参加します。
