@@ -12,7 +12,7 @@ published: false
 
 また、現地の様子はXで [#SnowflakeSummit](https://x.com/hashtag/SnowflakeSummit?src=hashtag_click) のハッシュタグでも発信しています。あわせてご覧ください。
 
-昨年のまとめ記事はこちらです。
+昨年のまとめ記事は以下になります。
 
 https://zenn.dev/finatext/articles/snowflake-summit-2025-summary-nowcast
 
