@@ -18,9 +18,12 @@ published: false
   - Ann Helmick 氏 — SVP, Director of Client Experience, Peoples Bank
   - Coastal — Senior Director / Industry Advisor
 - **要旨**:多くの地方銀行はコアバンキング・Salesforce・nCino といった断片化したシステム上で動き、顧客データがサイロ化している。AI が加速するなか、統合データ基盤を持たない銀行は次の Agentic 自動化・インテリジェンスの波に乗り遅れるリスクがある。Peoples Bank は Coastal と組み、**レガシーな SQL レジストリを Snowflake の Medallion アーキテクチャに置き換え**、dbt で業務システムを統合、**総勘定元帳（GL）を信頼できる Customer 360 に転換**。Golden ID、**自動収益モニタリング**、**Zero-Copy 連携によるマーケティングセグメンテーション**を実現しつつ、Snowflake のための AI-Ready なファウンデーションを構築した
-- [公式セッションページ](https://reg.snowflake.com/flow/snowflake/summit26/agenda/page/main/session/1768236996669001yCZG)
+- [公式セッションページ](https://reg.summit.snowflake.com/flow/snowflake/summit26/sessions/page/catalog/session/1768236996669001yCZG)
 
 ## はじめに
+
+![タイトルスライド](/images/snowflake-summit-2026-bi202/title-slide.jpg)
+
 Snowflake Summitのセッションの中では新機能使って〇〇%コスト削減！といったようなキャッチーな事例もありますが、淡々とやるべきことをやって成果を出したというセッションもあります。その一つが、今回紹介する **Peoples Bank of Ohio** が、パートナーのCoastalと共同で語った「The AI-Ready Bank: How Peoples Bank Unified Core Systems on Snowflake」です。
 
 テーマは一言でいうと「AI に取り組む前に、AI が乗るデータ基盤を作り直した」という話。Cortex や Snowflake Intelligence といった派手なレイヤーの"下"で、断片化したコアシステムをどう統合し、信頼できる Gold レイヤーまで持っていったか、という非常に地に足のついた内容でした。
@@ -41,12 +44,16 @@ Snowflake Summitのセッションの中では新機能使って〇〇%コスト
 
 冒頭で出てきたのがこのフレーズでした。
 
+![Data everywhere. Insight nowhere.](/images/snowflake-summit-2026-bi202/data-everywhere-insight-nowhere.jpg)
+
 > Data everywhere. Insight nowhere.
 > — Ann Helmick, Peoples Bank
 
 「どの地方銀行に会っても診断結果は同じ。世界クラスの業務システムが揃っているのに、それらが互いに会話できていない」という問題意識です。データはあるのにインサイトがない、という状態。耳が痛い組織は多いと思います。
 
 ### 表向きは「3 つのサイロ」
+
+![Three Silos, One Customer](/images/snowflake-summit-2026-bi202/three-silos-one-customer.jpg)
 
 スライドでは、顧客を分断している代表的なシステムを 3 つに整理していました。
 
@@ -69,6 +76,8 @@ Snowflake Summitのセッションの中では新機能使って〇〇%コスト
 にデータが散らばっていた、という話でした。「3 silos, one customer」というメッセージは聴衆向けの単純化で、現場の実態は "20 silos, one customer" に近い。M&A を重ねた地方銀行・地域金融機関ほど、この "システム動物園" は他人事ではないはずです。
 
 ### 断片化の「隠れたコスト」
+
+![The Hidden Cost of Fragmentation](/images/snowflake-summit-2026-bi202/hidden-cost-of-fragmentation.jpg)
 
 スライド "The Hidden Cost of Fragmentation" では、コストを 3 軸で言語化していました。
 
@@ -101,7 +110,10 @@ Snowflake Summitのセッションの中では新機能使って〇〇%コスト
 
 ## 3. アーキテクチャ:Medallion（Bronze → Silver → Gold）+ dbt
 
-中核は王道の **Medallion Architecture**。各レイヤーの役割と、そこで何が難しかったかをまとめます。
+中核は王道の **Medallion Architecture**。各レイヤーの役割と、
+
+![The Medallion Architecture](/images/snowflake-summit-2026-bi202/medallion-architecture.jpg)
+そこで何が難しかったかをまとめます。
 
 ### Bronze — Raw & Captured
 
@@ -140,6 +152,9 @@ Snowflake Summitのセッションの中では新機能使って〇〇%コスト
 
 単なる DWH 移行と一線を画した、と主張する根拠が以下の 4 つの設計判断でした。
 
+![Four Pillars of the AI-Ready Foundation](/images/snowflake-summit-2026-bi202/four-pillars.jpg)
+
+
 1. **Golden IDs** — 1 顧客 1 ID を Core / Salesforce / nCino 横断で確立。Snowflake ネイティブの名寄せ（ID 解決）が、レガシーな SQL レジストリを置き換える
 2. **Zero-Copy to Salesforce** — Snowflake と Salesforce がデータをライブで共有。ETL なし・レプリカなし・ドリフトなし。RM とアナリストが**同じ瞬間に同じ顧客を見る**
 3. **Containerized by Source** — 各ソースシステムが Snowflake 上の独立コンテナに存在。**Cost-to-serve をソース単位で追跡** → 「謎のウェアハウス請求」が消える
@@ -153,6 +168,8 @@ Snowflake Summitのセッションの中では新機能使って〇〇%コスト
 
 個人的にいちばん持ち帰りたいフレーズがこれでした。
 
+![AI-enabled. Not AI-curious.](/images/snowflake-summit-2026-bi202/ai-enabled-not-ai-curious.jpg)
+
 > AI-enabled. Not AI-curious.
 
 「多くの銀行は AI を後付け（retrofit）している。Peoples はそうしない」。Gold レイヤー、Golden ID、Salesforce 同期 — **すべてのピースが『いずれエージェントがクエリする』前提で作られている**、と。
@@ -164,6 +181,9 @@ Ann Helmick 氏の言葉を要約すると、ゴールは「RM に "AI ツール
 ### 「AI Angle の下にある Foundation」
 
 別スライドでは、Native AI の前提条件を 3 点に整理していました。
+
+![The Foundation Behind the AI Angle](/images/snowflake-summit-2026-bi202/foundation-behind-ai-angle.jpg)
+
 
 - **Native AI in a secure environment**:Cortex は Snowflake のガバナンス環境内で動く。**データが壁の外に出ない**
 - **AI Performs Best on Trusted Data**:Cortex は不完全なデータでも動くが、セマンティックモデル・明確なビジネス定義・クリーンな入力に支えられたときに真価を発揮する
@@ -179,6 +199,9 @@ Ann Helmick 氏の言葉を要約すると、ゴールは「RM に "AI ツール
 
 ビフォーアフターのスライドはシンプルでした。「すべての下流を解き放つ運用上のシフト」として:
 
+![From Weeks to Hours](/images/snowflake-summit-2026-bi202/from-weeks-to-hours.jpg)
+
+
 - **Golden IDs in production**:レガシーな SQL マッチングを廃止。Core / Salesforce / nCino 横断の単一 ID グラフ
 - **自動収益モニタリング（Automated revenue monitoring）**:GL を整合させた Gold をベースに、収益のモニタリングを自動化。手作業のスコアカード／インセンティブ集計から解放される
 - **Customer 360 + segmentation operational**:マーケが行動ベースのセグメントを Gold レイヤーに直接実行 — **チケットなし・エクスポートなし**（Zero-Copy 連携で実現）
@@ -193,6 +216,9 @@ Ann Helmick 氏の言葉を要約すると、ゴールは「RM に "AI ツール
 技術セッションのつもりで入ったら、後半は完全に**組織・ガバナンス・人**の話で、ここが本セッションの白眉でした。
 
 ### Start With Governance Clarity（2 つの助言）
+
+![Start With Governance Clarity](/images/snowflake-summit-2026-bi202/start-with-governance-clarity.jpg)
+
 
 1. **Don't Wait for a Perfect Strategy** — 完璧な戦略を待つな。まず**ガバナンスの明確化**から:実効性のある RACI、名前のついたデータオーナー、そして「**メトリクスの意味を誰が決めるのか**」の合意。これだけで 1 年分のツール議論が前に進む
 2. **Enablement Is Harder Than the Tech** — **組織のアラインメントは技術より難しい**。規制当局・取締役会・失敗プロジェクトからのプレッシャーが来る"前"にやれ。来てからでは遅い。技術は、人の準備ができたときに後から着地する
