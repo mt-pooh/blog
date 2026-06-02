@@ -106,16 +106,15 @@ Snowflake Summitのセッションの中では新機能使って〇〇%コスト
 
 ただ、このレジストリ作業には副次的に大きな価値がありました。**「どのデータがどこから生まれているのか」を棚卸しせざるを得なくなった**点です。隠れたレポート依存関係やデータの欠損が、ここで初めて表に出てきた。後続の Snowflake への取り込み（Bronze 設計）のためのソースマッピングは、このレジストリ作業が土台になっています。
 
-> 教訓:いきなり理想形を作ろうとせず、「暫定の Golden ID で現状を可視化 → ソースを棚卸し → 本格基盤の設計に反映」という段階移行を取っている。データ基盤刷新あるあるのビッグバン移行リスクを回避している点が好印象でした。
+いきなり理想形を作ろうとせず、「暫定の Golden ID で現状を可視化 → ソースを棚卸し → 本格基盤の設計に反映」という段階移行を取っている点が好印象でした。データ基盤刷新あるあるのビッグバン移行リスクをうまく回避しています。
 
 ---
 
 ## 3. アーキテクチャ:Medallion（Bronze → Silver → Gold）+ dbt
 
-中核は王道の **Medallion Architecture**。各レイヤーの役割と、
+中核は王道の **Medallion Architecture**。各レイヤーの役割と、そこで何が難しかったかをまとめます。
 
 ![The Medallion Architecture](/images/snowflake-summit-2026-bi202/medallion-architecture.jpg)
-そこで何が難しかったかをまとめます。
 
 ### Bronze — Raw & Captured
 
@@ -199,10 +198,11 @@ Ann Helmick 氏の言葉を要約すると、ゴールは「RM に "AI ツール
 
 ## 6. 成果:From Weeks to Hours
 
-ビフォーアフターのスライドはシンプルでした。「すべての下流を解き放つ運用上のシフト」として:
+ビフォーアフターのスライドはシンプルでした。
 
 ![From Weeks to Hours](/images/snowflake-summit-2026-bi202/from-weeks-to-hours.jpg)
 
+「すべての下流を解き放つ運用上のシフト」として、以下の成果が示されていました。
 
 - **Golden IDs in production**:レガシーな SQL マッチングを廃止。Core / Salesforce / nCino 横断の単一 ID グラフ
 - **自動収益モニタリング（Automated revenue monitoring）**:GL を整合させた Gold をベースに、収益のモニタリングを自動化。手作業のスコアカード／インセンティブ集計から解放される
