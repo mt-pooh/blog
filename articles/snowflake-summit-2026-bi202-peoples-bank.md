@@ -4,7 +4,7 @@ emoji: "🏦"
 type: "tech"
 topics: ["snowflake", "dataengineering", "dbt", "ai", "datagovernance"]
 publication_name: "finatext"
-published: false
+published: true
 ---
 
 :::message
