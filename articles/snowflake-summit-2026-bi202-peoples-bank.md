@@ -68,7 +68,7 @@ Snowflake Summitのセッションの中では新機能使って〇〇%コスト
 | システム | 役割 | 抱える問題 |
 | --- | --- | --- |
 | **Banking Systems**（コア） | Transactional Heart（預金・融資・総勘定元帳） | 数十年分の履歴。誰も触りたがらないスキーマ |
-| **Salesforce** | Relationship Layer（RM が住む場所） | 顧客が「実際に何を取引しているか」から切り離されている |
+| **Salesforce** | Relationship Layer（RM;リレーションシップ・マネージャー が住む場所） | 顧客が「実際に何を取引しているか」から切り離されている |
 | **nCino** | Lending Workflows | 独自の ID 体系・独自のデータオーナー → もう一つの"顧客の真実" |
 
 結果として、**「顧客の単一ビューがない＝Single Source of Truth がない」**。同じ顧客が、システムごとに別 ID・別定義で存在している状態です。
@@ -158,7 +158,7 @@ Snowflake Summitのセッションの中では新機能使って〇〇%コスト
 
 1. **Golden IDs** — 1 顧客 1 ID を Core / Salesforce / nCino 横断で確立。Snowflake ネイティブの名寄せ（ID 解決）が、レガシーな SQL レジストリを置き換える
 2. **Zero-Copy to Salesforce** — Snowflake と Salesforce がデータをライブで共有。ETL なし・レプリカなし・ドリフトなし。RM とアナリストが**同じ瞬間に同じ顧客を見る**
-3. **Containerized by Source** — 各ソースシステムが Snowflake 上の独立コンテナに存在。**Cost-to-serve をソース単位で追跡** → 「謎のウェアハウス請求」が消える
+3. **Containerized by Source** — ソースシステムごとに Snowflake のデータベース／スキーマを分離して管理する設計（ここでの「コンテナ」は Docker 等のインフラ的なものではなく、Snowflake 上の論理的な分離単位を指す）。**Cost-to-serve をソース単位で追跡** → 「謎のウェアハウス請求」が消える
 4. **Cortex Code & Cortex AI from Day One** — AI を後付けしない。Cortex AI を sprint 1 から、エージェント前提の基盤として組み込む
 
 3 番目の「ソース単位のコンテナ化＝ソース単位でのコスト可視化」は地味ですが、運用とコストガバナンスの観点でかなり実践的だと思いました。Snowflake のコスト最適化を語るとき、ウェアハウス単位ではなく「どのソースのデータがいくら食っているか」で見られるのは強い。
