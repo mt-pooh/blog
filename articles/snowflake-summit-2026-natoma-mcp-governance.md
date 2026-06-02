@@ -1,5 +1,5 @@
 ---
-title: "Snowflakeが買収した「Natoma」とは — エンタープライズMCPゲートウェイのガバナンス設計を読み解く"
+title: "【Snowflake Summit 2026】Snowflakeが買収した「Natoma」— エンタープライズMCPガバナンス設計を読み解く"
 emoji: "🛡️"
 type: "tech"
 topics: ["snowflake", "mcp", "ai", "natoma", "governance"]
@@ -29,8 +29,6 @@ AIエージェントは、もはやデータを「クエリ」するだけの存
 なお Natoma は2024年設立、従業員約27名、2025年5月にシード資金を調達したスタートアップです。CEO兼Co-Founderの Pratyus Patnaik は、Oktaにオペレーション基盤 atSpoke を売却した経歴を持つ元Okta幹部で、チームはMCP・ゲートウェイ基盤・アイデンティティガバナンス・特権アクセス管理（PAM）に強みを持ちます。このバックグラウンドは、後述のアーキテクチャの随所に効いています。
 
 ## なぜ今「エージェントのガバナンス」なのか
-
-セッション序盤のスライドは率直でした。
 
 ![Enterprises haven't met the AI moment](/images/snowflake-summit-2026-natoma/IMG_0458.jpg)
 
