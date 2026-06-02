@@ -13,11 +13,14 @@ published: false
 
 ### セッション概要（公式）
 
-- **タイトル**:The AI-Ready Bank: How Peoples Bank Unified Core Systems on Snowflake（BI202）
-- **登壇**:Peoples Bank of Ohio（$10B+ 規模の地域金融機関） × パートナー **Coastal**
-  - Ann Helmick 氏 — SVP, Director of Client Experience, Peoples Bank
-  - Coastal — Senior Director / Industry Advisor
-- **要旨**:多くの地方銀行はコアバンキング・Salesforce・nCino といった断片化したシステム上で動き、顧客データがサイロ化している。AI が加速するなか、統合データ基盤を持たない銀行は次の Agentic 自動化・インテリジェンスの波に乗り遅れるリスクがある。Peoples Bank は Coastal と組み、**レガシーな SQL レジストリを Snowflake の Medallion アーキテクチャに置き換え**、dbt で業務システムを統合、**総勘定元帳（GL）を信頼できる Customer 360 に転換**。Golden ID、**自動収益モニタリング**、**Zero-Copy 連携によるマーケティングセグメンテーション**を実現しつつ、Snowflake のための AI-Ready なファウンデーションを構築した
+- **タイトル**: The AI-Ready Bank: How Peoples Bank Unified Core Systems on Snowflake（BI202）
+- **登壇**:
+  - Priscilla Ellis — Senior Director - Industry Advisor, Coastal
+  - Ann Helmick — SVP, Director of Client Experience, Peoples Bank
+- **概要**: Most regional banks run on fragmented systems — core banking, Salesforce, nCino — siloing customer data. As AI capabilities accelerate, banks without a unified data foundation risk missing the next wave of agentic automation and intelligence. Peoples Bank of Ohio, a $10 billion+ institution, partnered with Coastal to do something about it. It replaced a legacy SQL registry with Snowflake medallion architecture, used dbt to unify operational systems and turned its general ledger into a trusted customer 360. Get the blueprint: See how the bank delivered golden IDs and automated revenue monitoring and marketing segmentation via zero-copy integration while building an AI-ready foundation for Snowflake.
+- **トラック**: BI & Analytics／Breakout Session／45 分／Intermediate
+- **対象機能**: dbt Projects on Snowflake、Snowflake Intelligence
+- **日時**: 2026年6月1日（月）14:30–15:15 PDT、Room 211（Moscone South, Level 2）
 - [公式セッションページ](https://reg.summit.snowflake.com/flow/snowflake/summit26/sessions/page/catalog/session/1768236996669001yCZG)
 
 ## はじめに
