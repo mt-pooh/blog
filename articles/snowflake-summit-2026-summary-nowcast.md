@@ -22,8 +22,26 @@ https://zenn.dev/finatext/articles/snowflake-summit-2025-summary-nowcast
 :::
 
 ## 1日目
+### opening keynote
 
-（準備中）
+https://zenn.dev/finatext/articles/snowflake-summit-2026-opening-keynote
+
+### セッション
+
+- How to Evaluate Snowflake Gen2 Safely in Production and the Outcomes at Scale 
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-gen2-migrate
+
+- The AI-Ready Bank: How Peoples Bank Unified Core Systems on Snowflake
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-bi202-peoples-bank
+
+- How Canva Built a Petabyte-Scale Optimization Ecosystem
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-canva-cost-strategy
+
+- 
+
 
 ## 2日目
 
