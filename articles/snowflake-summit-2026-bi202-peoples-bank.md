@@ -36,7 +36,7 @@ Snowflake Summitのセッションの中では新機能使って〇〇%コスト
 
 テーマは一言でいうと「AI に取り組む前に、AI が乗るデータ基盤を作り直した」という話。Cortex や Snowflake Intelligence といった派手なレイヤーの"下"で、断片化したコアシステムをどう統合し、信頼できる Gold レイヤーまで持っていったか、という非常に地に足のついた内容でした。
 
-登壇は、Peoples Bank の SVP・Director of Client Experience である Ann Helmick 氏と、パートナー Coastal の Industry Advisor（Senior Director）。エンジニア向けというより「事業側のオーナーが語るデータ基盤刷新」という構成で、技術選定だけでなく組織・ガバナンス・人の話に踏み込んでいたのが良かったです。
+登壇は、Peoples Bank の SVP・Director of Client Experience である Ann Helmick 氏と、Coastal の Senior Director - Industry Advisor である Priscilla Ellis 氏。エンジニア向けというより「事業側のオーナーが語るデータ基盤刷新」という構成で、技術選定だけでなく組織・ガバナンス・人の話に踏み込んでいたのが良かったです。
 
 この記事では、
 
