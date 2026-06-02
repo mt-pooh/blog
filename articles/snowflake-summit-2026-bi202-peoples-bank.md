@@ -1,5 +1,5 @@
 ---
-title: '【Snowflake Summit 2026 参加レポート】地方銀行はどうやって "AI-Ready" なデータ基盤を作ったか — Peoples Bank の Core System 統合事例（BI202）'
+title: '【Snowflake Summit 2026】地方銀行の "AI-Ready" データ基盤 — Peoples Bank（BI202）'
 emoji: "🏦"
 type: "tech"
 topics: ["snowflake", "dataengineering", "dbt", "ai", "datagovernance"]
