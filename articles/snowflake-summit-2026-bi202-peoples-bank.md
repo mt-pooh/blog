@@ -7,6 +7,11 @@ publication_name: "finatext"
 published: false
 ---
 
+:::message
+ナウキャストの Snowflake Summit 2026 参加記の一覧は以下でご覧ください。
+https://zenn.dev/finatext/articles/snowflake-summit-2026-summary-nowcast
+:::
+
 > ※ 本記事は Snowflake Summit 2026 のセッション
 > **「The AI-Ready Bank: How Peoples Bank Unified Core Systems on Snowflake」(BI202)**
 > を現地で聴講したメモを元にした参加レポートです。スライドの図と、登壇内容の要約を再構成しています。
