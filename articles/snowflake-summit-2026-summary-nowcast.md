@@ -40,9 +40,6 @@ https://zenn.dev/finatext/articles/snowflake-summit-2026-bi202-peoples-bank
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-canva-cost-strategy
 
-- 
-
-
 ## 2日目
 
 （準備中）
