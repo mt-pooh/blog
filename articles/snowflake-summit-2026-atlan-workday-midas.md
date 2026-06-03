@@ -3,6 +3,7 @@ title: "【Snowflake Summit】AIエージェントの精度を決めるのは「
 emoji: "🧠"
 type: "tech"
 topics: ["snowflake", "ai", "mcp", "datacatalog", "llm", "SnowflakeSummit"]
+publication_name: "finatext"
 published: false
 ---
 
