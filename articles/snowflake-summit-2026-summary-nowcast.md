@@ -68,6 +68,10 @@ https://zenn.dev/finatext/articles/6c5f6a7f7862e4
 
 https://zenn.dev/finatext/articles/b7f92664bd18d2
 
+- GAMING AT SCALE: HOW NEXON BUILT AN END-TO-END AI PLATFORM ON SNOWFLAKE
+
+https://zenn.dev/finatext/articles/f69c044363819a
+
 ## 3日目
 
 （準備中）
