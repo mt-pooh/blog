@@ -2,7 +2,7 @@
 title: "【Snowflake Summit】AIエージェントの精度を決めるのは「コンテキスト」— Atlan と Workday MIDAS"
 emoji: "🧠"
 type: "tech"
-topics: ["snowflake", "ai", "mcp", "datacatalog", "llm", "SnowflakeSummit"]
+topics: ["snowflake", "ai", "mcp", "datacatalog", "SnowflakeSummit"]
 publication_name: "finatext"
 published: false
 ---
@@ -195,7 +195,7 @@ Jon 氏が MIDAS にクリスマスツリーについて聞いてみた、とい
 
 ## どこから始めるか：User-centric Design
 
-最後に、実務に持ち帰れる「最初の一手」のまとめ。
+最後にまとめとして登壇者からのアドバイスが語られていました。
 
 ![Where to Start? User-centric Design](/images/snowflake-summit-2026-atlan-workday-midas/IMG_0551.jpg)
 

@@ -4,7 +4,7 @@ emoji: "🛡️"
 type: "tech"
 topics: ["snowflake", "mcp", "ai", "natoma", "governance"]
 publication_name: "finatext"
-published: false
+published: true
 ---
 
 
