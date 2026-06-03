@@ -4,7 +4,7 @@ emoji: "🧠"
 type: "tech"
 topics: ["snowflake", "ai", "mcp", "datacatalog", "SnowflakeSummit"]
 publication_name: "finatext"
-published: false
+published: true
 ---
 
 :::message
