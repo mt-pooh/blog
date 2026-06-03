@@ -46,7 +46,8 @@ https://zenn.dev/finatext/articles/snowflake-summit-2026-self-healing-smanticvie
 
 ## 2日目
 ### platform keynote
-(準備中)
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-platform-keynote
 
 
 ### セッション
