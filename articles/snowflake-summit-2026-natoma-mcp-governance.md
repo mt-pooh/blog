@@ -7,6 +7,7 @@ publication_name: "finatext"
 published: false
 ---
 
+
 :::message
 ナウキャストの Snowflake Summit 2026 参加記の一覧は以下でご覧ください。
 https://zenn.dev/finatext/articles/snowflake-summit-2026-summary-nowcast
