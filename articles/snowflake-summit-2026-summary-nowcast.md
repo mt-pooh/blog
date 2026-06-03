@@ -40,9 +40,32 @@ https://zenn.dev/finatext/articles/snowflake-summit-2026-bi202-peoples-bank
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-canva-cost-strategy
 
-## 2日目
+- Self-Healing Semantic Layers with Snowflake Cortex AI: How Sigma Built J.A.K.E.
 
-（準備中）
+https://zenn.dev/finatext/articles/snowflake-summit-2026-self-healing-smanticview
+
+## 2日目
+### platform keynote
+(準備中)
+
+
+### セッション
+
+- Integrating Snowflake and Neo4j: Practical Graph Analytics for Your Data
+
+https://zenn.dev/finatext/articles/c2800526c8e1fc
+
+- Governing the Agentic Enterprise: Meet Natoma, the Enterprise MCP Platform
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-natoma-mcp-governance
+
+- What's New: Smart Pipeline Development For AI-Ready Data
+
+https://zenn.dev/finatext/articles/6c5f6a7f7862e4
+
+- Open Data Infrastructure: The Next Era of Data Architecture
+
+https://zenn.dev/finatext/articles/b7f92664bd18d2
 
 ## 3日目
 
