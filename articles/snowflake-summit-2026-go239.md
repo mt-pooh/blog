@@ -8,6 +8,11 @@ published: false
 ---
 
 :::message
+ナウキャストの Snowflake Summit 2026 参加記の一覧は以下でご覧ください。
+https://zenn.dev/finatext/articles/snowflake-summit-2026-summary-nowcast
+:::
+
+:::message
 本記事は Snowflake Summit 2026 のセッション **「Best Practices for Protecting and Auditing Sensitive Data in an AI-First World（GO239）」**（2026年6月4日）の聴講メモをもとにしたまとめです。内容はセッション時点の情報であり、各機能のリリースステータス（In Dev / Private / Public / GA）は今後変わる可能性があります。
 :::
 
