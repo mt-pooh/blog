@@ -72,9 +72,18 @@ https://zenn.dev/finatext/articles/b7f92664bd18d2
 
 https://zenn.dev/finatext/articles/f69c044363819a
 
+- How a Universal Semantic Layer Provides Context for AI
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-semantic-layer-for-ai
+
 ## 3日目
 
-（準備中）
+### セッション
+
+- Context Layer in Practice: How Workday Builds Trustworthy AI Agents
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-atlan-workday-midas
+
 
 ## 4日目
 
