@@ -44,6 +44,10 @@ https://zenn.dev/finatext/articles/snowflake-summit-2026-canva-cost-strategy
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-self-healing-smanticview
 
+- Building Real-Time, Multimodal AI Agents with the SNACK Stack
+
+https://zenn.dev/finatext/articles/5bd5a733c5581d
+
 ## 2日目
 ### platform keynote
 
@@ -75,6 +79,10 @@ https://zenn.dev/finatext/articles/f69c044363819a
 - How a Universal Semantic Layer Provides Context for AI
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-semantic-layer-for-ai
+
+- What's New: Snowflake CoWork and Cortex Agents for Real Business Impact
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-cortex-cowork
 
 ## 3日目
 
