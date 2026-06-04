@@ -81,7 +81,7 @@ Horizon Catalogのガバナンスは、3要素で整理されていました。
 - **Protect（保護）**：ポリシーがデータと一緒に「移動」し、どこでも効く
 - **Trust（信頼／監視）**：データ品質・リネージ・アクセス監査を、人間とAIの双方に対して継続的に監視する
 
-「Classification → Protection → Quality → Lineage → Audit」が Horizon Catalog を中心にぐるりと連なるホイール図で、これらが独立した機能ではなく**相互に連結したコンテナ**として動くことが強調されていました。
+「Classification → Protection → Quality → Lineage → Audit」が Horizon Catalog を中心にぐるりと連なるホイール図で、これらが独立した機能ではなく**相互に連結したもの**として動くことが強調されていました。
 
 以降は、この3本柱に沿って具体機能を見ていきます。
 
@@ -93,7 +93,7 @@ Horizon Catalogのガバナンスは、3要素で整理されていました。
 
 ![Automatic Sensitive Data Classification](/images/snowflake-summit-2026-go239/IMG_0589.jpg)
 
-最初の一歩は「機密データがどこにあるか」を知ること。**Trust Center** から **Classification Profile** を作成すると、Snowflakeがプラットフォーム横断で機密データを自動検出します。
+まずは「機密データがどこにあるか」。**Trust Center** から **Classification Profile** を作成すると、Snowflakeがプラットフォーム横断で機密データを自動検出します。
 
 - **150種類以上のビルトイン分類器**（PII / PCI カテゴリをカバー）
 - 検出した機密カラムに **自動でタグ付け**
@@ -101,13 +101,13 @@ Horizon Catalogのガバナンスは、3要素で整理されていました。
 - **カスタム分類器**で「自社にとっての機密」を定義可能
 - GDPR / CCPA / HIPAA / PCI-DSS などのコンプライアンス要件に対応
 
-Trust Center のダッシュボードでは、「レビューが必要なオブジェクト数」「未マスクの機密カラムを持つオブジェクト数」「機密データにアクセスできるユーザー数」「分類エラー」といったメトリクスや、分類カテゴリ別・規制標準別の集計、マスキングステータスが一覧で確認できます。**まず全体像をスコア化して可視化する**ところがスタート地点になります。
+Trust Center のダッシュボードでは、「レビューが必要なオブジェクト数」「未マスクの機密カラムを持つオブジェクト数」「機密データにアクセスできるユーザー数」「分類エラー」といったメトリクスや、分類カテゴリ別・規制標準別の集計、マスキングステータスが一覧で確認できます。**まず全体像をスコア化して可視化する**ところができるようになります。
 
 ---
 
 ## 4. Protect ― タグベースでスケールする保護
 
-Discoverで付与した「タグ」を起点に、保護をスケールさせるのがSnowflakeらしいアプローチです。
+Discoverで付与した「タグ」を起点に、保護をスケールさせる方針です。
 
 ### Tag-Based Masking（GA）
 
@@ -162,7 +162,7 @@ CREATE OR REPLACE ROW ACCESS POLICY region_rap
   END;
 ```
 
-> **ポイント**：ポリシー引数名（`region`）がテーブルのカラム名（`region`）と一致していないと、タグ経由でバインドした際に正しく機能しません。
+> **ポイント**：ポリシー引数名（`region`）がテーブルのカラム名（`region`）と一致していないと、タグ経由でバインドした際に正しく機能しない
 
 ![ABAC: アナリストの region_access タグを NA → EMEA に変更するデモ](/images/snowflake-summit-2026-go239/IMG_0596.jpg)
 
@@ -195,7 +195,7 @@ SELECT * FROM SNOWFLAKE.ACCOUNT_USAGE.ACCESS_HISTORY;
 
 ## 6. Govern with AI ― CoCoによる自然言語ガバナンス
 
-ここからが、本セッション後半の山場です。**ガバナンスの「操作」自体をAIに委ねる**という話に踏み込みます。
+**ガバナンスの「操作」自体をAIに委ねる**という話です。
 
 ### Snowflake CoCo for Data Governance（GA）
 
@@ -213,7 +213,7 @@ SELECT * FROM SNOWFLAKE.ACCOUNT_USAGE.ACCESS_HISTORY;
 
 さらに踏み込んだのが、**「意図（intent）を記述すれば、Snowflakeが実装する」** というスキルです。
 
-- プレーンな英語の意図を、**完全に統治された状態（governed state）**へ変換
+- プレーンな英語の意図を、完全に統治された状態（governed state）へ変換
 - アカウントの現状を理解し、**ギャップを特定して、アクションを実行**
 - 分類・タグ・カラム/行ポリシー・ドリフト検知・アラート・監査を横断して動作
 - HIPAA / PII などの**ビルトインコンプライアンステンプレート**と**継続的なドリフト監視**
@@ -361,5 +361,5 @@ $$;
 - **エージェントを「一意のAgent Principal」として識別し、人間と同じガバナンス基盤（タグ／マスキング／Access History）で統治する**という方向性。MCPサーバーやエージェントを社内に展開していくうえで、ID・最小権限・監査ログ・スコープクリープ検知をプラットフォーム側で担保できるのは大きい。
 - **Intent-driven Governance** と **AI Governance Dashboard** が示す「自然言語で意図を述べ、ギャップ分析と次アクションまでAIが提示する」体験。ガバナンスの担い手を専門家から意思決定者へ広げる狙いがはっきりしている。
 
-一方で、Intent-driven Governance や各種AIガードレール、AI Governance DashboardはまだPrivate Preview段階のものが多く、GA済みのもの（プロンプトインジェクションガードレール、Access History、タグベースマスキング等）と区別して評価する必要があります。まずはGA機能（Sensitive Data Classification + Tag-based Masking + Access History）で**"タグ中心の土台"を固め**、その上にAI向けガバナンスを段階的に載せていくのが現実的な進め方だと感じました。
+一方で、Intent-driven Governance や各種AIガードレール、AI Governance DashboardはまだPrivate Preview段階のものが多く、GA済みのもの（プロンプトインジェクションガードレール、Access History、タグベースマスキング等）と区別して検証しないといけないと思っています。まずはGA機能（Sensitive Data Classification + Tag-based Masking + Access History）で"タグ中心の土台"を固め、その上にAI向けガバナンスを段階的に載せていくのが現実的な進め方だと感じました。
 
