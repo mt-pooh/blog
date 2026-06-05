@@ -4,7 +4,7 @@ emoji: "🛡️"
 type: "tech"
 topics: ["snowflake", "datagovernance", "ai", "security", "SnowflakeSummit"]
 publication_name: "finatext"
-published: false
+published: true
 ---
 
 :::message
