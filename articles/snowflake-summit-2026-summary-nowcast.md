@@ -18,81 +18,106 @@ published_at: 2026-05-27 10:00
 https://zenn.dev/finatext/articles/snowflake-summit-2025-summary-nowcast
 
 :::message
-この記事は随時更新予定です。
+この記事は随時更新中です。
 :::
 
-## 1日目
-### opening keynote
+## Keynote
+
+### Opening Keynote
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-opening-keynote
 
-### セッション
+### Platform Keynote
 
-- How to Evaluate Snowflake Gen2 Safely in Production and the Outcomes at Scale 
+https://zenn.dev/finatext/articles/snowflake-summit-2026-platform-keynote
 
-https://zenn.dev/finatext/articles/snowflake-summit-2026-gen2-migrate
+## セッション
 
-- The AI-Ready Bank: How Peoples Bank Unified Core Systems on Snowflake
+### What’s New in Snowflake
 
-https://zenn.dev/finatext/articles/snowflake-summit-2026-bi202-peoples-bank
+- What’s New: Smart Pipeline Development For AI-Ready Data
 
-- How Canva Built a Petabyte-Scale Optimization Ecosystem
+https://zenn.dev/finatext/articles/6c5f6a7f7862e4
 
-https://zenn.dev/finatext/articles/snowflake-summit-2026-canva-cost-strategy
+- What’s New: Snowflake CoWork and Cortex Agents for Real Business Impact
 
-- Self-Healing Semantic Layers with Snowflake Cortex AI: How Sigma Built J.A.K.E.
+https://zenn.dev/finatext/articles/snowflake-summit-2026-cortex-cowork
 
-https://zenn.dev/finatext/articles/snowflake-summit-2026-self-healing-smanticview
+- What’s New: AI-Powered Observability at Scale with Observe by Snowflake
+
+https://zenn.dev/finatext/articles/ed68320694a7b3
+
+- What’s New: Zero to a Trusted Semantic Layer in Snowflake
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-semantic-view-update
+
+### Generative AI & Agents
 
 - Building Real-Time, Multimodal AI Agents with the SNACK Stack
 
 https://zenn.dev/finatext/articles/5bd5a733c5581d
 
-## 2日目
-### platform keynote
-
-https://zenn.dev/finatext/articles/snowflake-summit-2026-platform-keynote
-
-
-### セッション
-
-- Integrating Snowflake and Neo4j: Practical Graph Analytics for Your Data
-
-https://zenn.dev/finatext/articles/c2800526c8e1fc
-
 - Governing the Agentic Enterprise: Meet Natoma, the Enterprise MCP Platform
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-natoma-mcp-governance
-
-- What's New: Smart Pipeline Development For AI-Ready Data
-
-https://zenn.dev/finatext/articles/6c5f6a7f7862e4
-
-- Open Data Infrastructure: The Next Era of Data Architecture
-
-https://zenn.dev/finatext/articles/b7f92664bd18d2
-
-- GAMING AT SCALE: HOW NEXON BUILT AN END-TO-END AI PLATFORM ON SNOWFLAKE
-
-https://zenn.dev/finatext/articles/f69c044363819a
-
-- How a Universal Semantic Layer Provides Context for AI
-
-https://zenn.dev/finatext/articles/snowflake-summit-2026-semantic-layer-for-ai
-
-- What's New: Snowflake CoWork and Cortex Agents for Real Business Impact
-
-https://zenn.dev/finatext/articles/snowflake-summit-2026-cortex-cowork
-
-## 3日目
-
-### セッション
 
 - Context Layer in Practice: How Workday Builds Trustworthy AI Agents
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-atlan-workday-midas
 
+- Best Practices for Snowflake-Managed MCP Setup and Integration
 
-## 4日目
+https://zenn.dev/finatext/articles/snowflake-summit-2026-mcp-best-practices
 
-（準備中）
+- Self-Healing Semantic Layers with Snowflake Cortex AI: How Sigma Built J.A.K.E.
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-self-healing-smanticview
+
+- How a Universal Semantic Layer Provides Context for AI
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-semantic-layer-for-ai
+
+### Performance & Cost Optimization
+
+- How to Evaluate Snowflake Gen2 Safely in Production and the Outcomes at Scale
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-gen2-migrate
+
+- How Canva Built a Petabyte-Scale Optimization Ecosystem
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-canva-cost-strategy
+
+- How GitLab Saved 90% in Engineering Costs by Keeping AI Inside Snowflake
+
+https://zenn.dev/finatext/articles/47595dcc2fc914
+
+- The Optima Vision: Making it Impossible to Run Inefficiently on Snowflake
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-optima
+
+### Architectures & Interoperability
+
+- Integrating Snowflake and Neo4j: Practical Graph Analytics for Your Data
+
+https://zenn.dev/finatext/articles/c2800526c8e1fc
+
+- Open Data Infrastructure: The Next Era of Data Architecture
+
+https://zenn.dev/finatext/articles/b7f92664bd18d2
+
+### Industry Innovation
+
+- The AI-Ready Bank: How Peoples Bank Unified Core Systems on Snowflake
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-bi202-peoples-bank
+
+- GAMING AT SCALE: HOW NEXON BUILT AN END-TO-END AI PLATFORM ON SNOWFLAKE
+
+https://zenn.dev/finatext/articles/f69c044363819a
+
+### Governance & Security
+
+- Best Practices for Protecting and Auditing Sensitive Data in an AI-First World
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-go239
+
