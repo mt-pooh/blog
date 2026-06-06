@@ -77,6 +77,10 @@ https://zenn.dev/finatext/articles/snowflake-summit-2026-self-healing-smanticvie
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-semantic-layer-for-ai
 
+- Architecting Semantic Memory: Scaling Domain Wisdom with Snowflake CoWork
+
+https://zenn.dev/finatext/articles/b17b1a3130ec61
+
 ### Performance & Cost Optimization
 
 - How to Evaluate Snowflake Gen2 Safely in Production and the Outcomes at Scale
@@ -94,6 +98,10 @@ https://zenn.dev/finatext/articles/47595dcc2fc914
 - The Optima Vision: Making it Impossible to Run Inefficiently on Snowflake
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-optima
+
+- 一般化する「FinOps」にどう向き合うか ─ 伝統的金融とデジタル金融の 2 つのアプローチ
+
+https://zenn.dev/finatext/articles/222678509389fc
 
 ### Architectures & Interoperability
 
@@ -120,4 +128,8 @@ https://zenn.dev/finatext/articles/f69c044363819a
 - Best Practices for Protecting and Auditing Sensitive Data in an AI-First World
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-go239
+
+## 展示会レポート
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-bi-tools-report
 
