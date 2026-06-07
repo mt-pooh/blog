@@ -129,6 +129,10 @@ https://zenn.dev/finatext/articles/f69c044363819a
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-go239
 
+- Trust by Design: How Toyota Motor Europe Governs Data and AI on Snowflake
+
+https://zenn.dev/finatext/articles/743772c85afb3c
+
 ## 展示会レポート
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-bi-tools-report
