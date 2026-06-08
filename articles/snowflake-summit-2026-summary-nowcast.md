@@ -127,7 +127,7 @@ https://zenn.dev/finatext/articles/snowflake-summit-2026-bi202-peoples-bank
 
 https://zenn.dev/finatext/articles/f69c044363819a
 
-- 「AI から始めるな、データから始めろ」── ヘッジファンドが 1 年で作った Snowflake
+- AI-Powered Hedge Fund Transformation: Optimizing Snowflake with Cortex Code（CoCo）
 
 https://zenn.dev/finatext/articles/433e6095ff7459
 
@@ -144,6 +144,8 @@ https://zenn.dev/finatext/articles/743772c85afb3c
 ## 展示会レポート
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-bi-tools-report
+
+## その他
 
 https://note.com/tblbj/n/n15707676cb87
 
