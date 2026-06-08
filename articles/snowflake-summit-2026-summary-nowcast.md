@@ -145,3 +145,5 @@ https://zenn.dev/finatext/articles/743772c85afb3c
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-bi-tools-report
 
+https://note.com/tblbj/n/n15707676cb87
+
