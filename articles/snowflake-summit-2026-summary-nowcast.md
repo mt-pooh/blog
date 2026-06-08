@@ -127,6 +127,10 @@ https://zenn.dev/finatext/articles/snowflake-summit-2026-bi202-peoples-bank
 
 https://zenn.dev/finatext/articles/f69c044363819a
 
+- 「AI から始めるな、データから始めろ」── ヘッジファンドが 1 年で作った Snowflake
+
+https://zenn.dev/finatext/articles/433e6095ff7459
+
 ### Governance & Security
 
 - Best Practices for Protecting and Auditing Sensitive Data in an AI-First World
