@@ -77,6 +77,10 @@ https://zenn.dev/finatext/articles/snowflake-summit-2026-self-healing-smanticvie
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-semantic-layer-for-ai
 
+- From Evaluation to Co-Innovation: How SoFi Built a Semantic Layer with Snowflake
+
+https://zenn.dev/finatext/articles/sofi-semantic-layer-summit-2026
+
 - Architecting Semantic Memory: Scaling Domain Wisdom with Snowflake CoWork
 
 https://zenn.dev/finatext/articles/b17b1a3130ec61
