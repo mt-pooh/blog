@@ -145,6 +145,10 @@ https://zenn.dev/finatext/articles/snowflake-summit-2026-go239
 
 https://zenn.dev/finatext/articles/743772c85afb3c
 
+- Zero PII, Full Insights: Cortex AI Transforms Insurance Claims Processing
+
+https://zenn.dev/finatext/articles/zero-pii-snowflake-summit-2026
+
 ## ブースレポート
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-bi-tools-report
