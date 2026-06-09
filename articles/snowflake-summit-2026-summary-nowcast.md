@@ -51,6 +51,10 @@ https://zenn.dev/finatext/articles/ed68320694a7b3
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-semantic-view-update
 
+- What’s New: Optimize, Govern and Scale Your Snowflake Environment
+
+https://zenn.dev/finatext/articles/snowflake-summit-2026-org-at-scale
+
 ### Generative AI & Agents
 
 - Building Real-Time, Multimodal AI Agents with the SNACK Stack
