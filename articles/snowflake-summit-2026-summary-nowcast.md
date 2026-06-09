@@ -151,3 +151,9 @@ https://zenn.dev/finatext/articles/snowflake-summit-2026-bi-tools-report
 
 https://note.com/tblbj/n/n15707676cb87
 
+## ラップアップイベント
+
+Summit参加メンバーによる振り返り勉強会「DataOps Night 特別編 〜Snowflake Summit 2026振り返り会」を2026年6月18日（木）に開催します。オフライン（東京・ナウキャスト本社）とオンライン（YouTube Live）のハイブリッド開催です。ぜひご参加ください！
+
+https://finatext.connpass.com/event/395566/
+
