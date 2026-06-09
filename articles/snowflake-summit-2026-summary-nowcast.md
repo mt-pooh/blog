@@ -8,18 +8,12 @@ published: true
 published_at: 2026-05-27 10:00
 ---
 
-2026年6月1日から4日の4日間、サンフランシスコで開催されるSnowflake Summit 2026にナウキャストのメンバーが参加します。
-今年もメンバーが参加したセッションのレポートを毎日公開予定です。公開次第この記事にリンクを追加していきますので、ぜひチェックしてください！
-
-また、現地の様子はXで [#SnowflakeSummit](https://x.com/hashtag/SnowflakeSummit?src=hashtag_click) のハッシュタグでも発信しています。あわせてご覧ください。
+2026年6月1日から4日の4日間、サンフランシスコで開催されたSnowflake Summit 2026にナウキャストのメンバーが参加しました。
+メンバーが参加したセッションのレポートをまとめています。
 
 昨年のまとめ記事は以下になります。
 
 https://zenn.dev/finatext/articles/snowflake-summit-2025-summary-nowcast
-
-:::message
-この記事は随時更新中です。
-:::
 
 ## Keynote
 
