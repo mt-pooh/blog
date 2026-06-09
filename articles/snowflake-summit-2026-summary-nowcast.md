@@ -141,7 +141,7 @@ https://zenn.dev/finatext/articles/snowflake-summit-2026-go239
 
 https://zenn.dev/finatext/articles/743772c85afb3c
 
-## 展示会レポート
+## ブースレポート
 
 https://zenn.dev/finatext/articles/snowflake-summit-2026-bi-tools-report
 
