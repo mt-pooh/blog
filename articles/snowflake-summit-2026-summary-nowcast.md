@@ -153,7 +153,17 @@ https://note.com/tblbj/n/n15707676cb87
 
 ## ラップアップイベント
 
-Summit参加メンバーによる振り返り勉強会「DataOps Night 特別編 〜Snowflake Summit 2026振り返り会」を2026年6月18日（木）に開催します。オフライン（東京・ナウキャスト本社）とオンライン（YouTube Live）のハイブリッド開催です。ぜひご参加ください！
+Summit参加メンバーによる振り返り勉強会「DataOps Night 特別編 〜Snowflake Summit 2026振り返り会」を2026年6月18日（木）に開催しました。オフライン（東京・ナウキャスト本社）とオンライン（YouTube Live）のハイブリッド開催でした。ご参加いただいた皆さん、ありがとうございました！
 
 https://finatext.connpass.com/event/395566/
+
+当日の登壇資料は以下になります。
+
+https://speakerdeck.com/kevinrobot34/snowflake-summit-2026-overall-review
+
+https://speakerdeck.com/tatsuhiro/snowflake-summit-2026-overall-what-new-coco
+
+https://speakerdeck.com/finanori/snowflake-trend
+
+https://speakerdeck.com/lana2548/dataops-nightte-bie-bian-snowflake-summit-2026-recap-imazhi-tuteokitai-context-to-memory-in-snowflake-summit-2026
 
